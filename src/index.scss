@@ -1,0 +1,8 @@
+@import "./styles/example.scss"; // semi colons are important in scss!!!!!!!
+
+// we now have access to the variable we defined in the example.scss file
+// in this file because we imported the file
+
+#main {
+    color: $color;
+}

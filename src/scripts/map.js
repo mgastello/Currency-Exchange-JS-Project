@@ -1,12 +1,12 @@
 export function renderMap() {
-    const width = 960;
-    const height = 600;
+    const width = 1650;
+    const height = 800;
 
     const svg = d3.select('svg');
     
     const projection = d3.geoMercator()
-        .scale(140)
-        .translate([width / 2, height / 1.45]);
+        .scale(190)
+        .translate([width / 2, height / 1.4]);
     const pathGenerator = d3.geoPath()
         .projection(projection);
 
@@ -17,12 +17,6 @@ export function renderMap() {
                 .data(countries.features)
                 .enter().append('path')
                     .attr('class', 'country')
-                .attr('d', pathGenerator)
-                .attr('fill', d => {
-                    const color = d3.rgb(Math.random() * 255, Math.random() * 255, Math.random() * 255);
-                    return d3.format('#x')(color);
-                })
-                .attr('stroke', '#fff')
-                .attr('stroke-width', 0.5)
+                .attr('d', pathGenerator);
         })
 }

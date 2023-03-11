@@ -1,0 +1,22 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+svg {
+    display: flex;
+    width: 100%;
+    // justify-content: center;
+}
+
+.country {
+    fill: rgb(32, 171, 32);
+    stroke: black;
+    stroke-width: 0.45px;
+}
+
+.country:hover {
+    fill: blue;
+    cursor: pointer;
+}

@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // // create new instance of d3 element in here
     // // dont add a lot of code to this file
     // new Example(main)
-
+    
     renderMap()
 });

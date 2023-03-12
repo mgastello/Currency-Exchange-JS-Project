@@ -5,7 +5,7 @@ export function renderMap() {
     const svg = d3.select('svg');
     
     const projection = d3.geoMercator()
-        .scale(190)
+        .scale(194)
         .translate([width / 2, height / 1.4]);
     const pathGenerator = d3.geoPath()
         .projection(projection);

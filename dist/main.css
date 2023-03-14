@@ -46,6 +46,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-svg{display:flex;justify-content:center;margin:auto}.country{fill:#20ab20;stroke:#000;stroke-width:.45px}.country:hover{fill:blue;cursor:pointer}h1{font-size:40px;display:flex;justify-content:center;font-family:"Franklin Gothic Medium","Arial Narrow",Arial,sans-serif}
+svg{display:flex;justify-content:center;margin:auto}.country{fill:#59b642;stroke:#323232;stroke-width:1.2px}.country:hover{fill:#0a7e0a;cursor:pointer}body{background-color:#00008b}#modal{color:#000;position:fixed;top:50%;left:50%;transform:translate(-50%, -50%);border:1px solid #000;border-radius:8px;z-index:10;background-color:#fff;width:600 px;max-width:40%}.modal-header{padding:10px 15px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #000}.modal-header .title{font-size:1.5rem;font-weight:bold}.modal-header .close-button{cursor:pointer;border:none;outline:none;background:none;font-size:1.5rem;font-weight:bold}.modal-body{padding:10px 15px}#overlay{position:fixed;opacity:0;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.4);pointer-events:none}#overlay.active{opacity:1;pointer-events:all}h1{font-size:52px;display:flex;justify-content:center;font-family:"Copperplate",sans-serif}
 
 /*# sourceMappingURL=main.css.map*/

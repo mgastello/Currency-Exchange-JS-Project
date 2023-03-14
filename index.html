@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./dist/main.css" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/copperplate" rel="stylesheet">
     <script src="./dist/main.js"></script>
     <title>xChngd</title>
   </head>
@@ -19,6 +20,15 @@
     <br>
     <!-- <svg width="1650" height="800"></svg> -->
     <svg viewBox="0 0 1650 800"></svg>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title"><h2></h2></div>
+            <button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body"><p></p></div>
+    </div>
+    <div class="active" id="overlay"></div>
   </body>
 
 </html>

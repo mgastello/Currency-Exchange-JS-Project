@@ -7,12 +7,16 @@ svg {
 }
 
 .country {
-    fill: rgb(32, 171, 32);
-    stroke: black;
-    stroke-width: 0.45px;
+    fill: rgb(89, 182, 66);
+    stroke: rgb(50, 50, 50);
+    stroke-width: 1.2px;
 }
 
 .country:hover {
-    fill: blue;
+    fill: rgb(10, 126, 10);
     cursor: pointer;
+}
+
+body {
+    background-color: darkblue;
 }

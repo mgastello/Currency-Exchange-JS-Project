@@ -1,6 +1,7 @@
 @import "./styles/reset.css";
 // @import "./styles/example.scss"; // semi colons are important in scss!!!!!!!
 @import "./styles/map.scss";
+@import "./styles/modal.scss";
 
 // we now have access to the variable we defined in the example.scss file
 // in this file because we imported the file
@@ -10,8 +11,8 @@
 // }
 
 h1 {
-    font-size: 40px;
+    font-size: 52px;
     display: flex;
     justify-content: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+    font-family: 'Copperplate', sans-serif;
+};

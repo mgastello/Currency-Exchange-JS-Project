@@ -1,4 +1,6 @@
 import { openModal, closeModal } from "./modal";
+const data1 = require("./country-currency-codes.json")
+import { data2 } from "./api";
 
 export function renderMap() {
     const width = 1650;
@@ -36,11 +38,26 @@ export function renderMap() {
                             openModal(modal)
                             const modalName = d3.select('#modal')
                             modalName.select('h2').text(country)
+                            const cCode = data1[country] != undefined ? data1[country] : `No Data`
+                            console.log(cCode)
+                            // console.log(data2)
+                            data2.then((data) => {
+                                const value = data.results[cCode] != undefined ? data.results[cCode] : `No Data`
+                                console.log(value)
+                                if (value !== `No Data`) {
+                                    modalName.select('p2').text(`1 USD equals ${value.toFixed(2)} ${cCode}`)
+                                } else {
+                                    modalName.select('p2').text(`No conversion data to ${cCode}`)
+                                }
+                            })
+                            // console.log(value)
+                            modalName.select('p1').text(`Currency Code: ${cCode}`)
+                            // modalName.select('p').text(`1 USD: ${value}`)
                             // modalName.style('display', 'block')
                         })
                         .append('title')
                         .text(d => countryName[d.id])
                 });
             })
-        // closeModal()
-}
+            // closeModal(modal)
+        }

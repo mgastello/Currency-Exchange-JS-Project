@@ -1,5 +1,5 @@
 const openModalButtons = document.querySelectorAll('.country')
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const closeModalButtons = document.querySelectorAll('data-close-button')
 const overlay = document.getElementById('overlay')
 
 openModalButtons.forEach(button => {
@@ -24,12 +24,12 @@ closeModalButtons.forEach(button => {
 // })
 
 export function openModal(modal) {
-    debugger
+    // debugger
     modal.classList.add('active')
     // overlay.classList.add('active')
 }
 
 export function closeModal(modal) {
     modal.classList.remove('active')
-    overlay.classList.remove('active')
+    // overlay.classList.remove('active')
 }

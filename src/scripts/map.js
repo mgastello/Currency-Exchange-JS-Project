@@ -1,3 +1,5 @@
+import { openModal, closeModal } from "./modal";
+
 export function renderMap() {
     const width = 1650;
     const height = 800;
@@ -28,12 +30,17 @@ export function renderMap() {
                         .attr('id', d => d.iso_n3)
                         .on('click', function(d) {
                             const country = d.target.__data__.properties.name
-                            const modal = d3.select('#modal');
-                            modal.select('h2').text(country);
-                            modal.style('display', 'block');
+                            // const modal = d3.select('#modal')
+                            // modal.select('h2').text(country)
+                            // modal.style('display', 'block')
+                            openModal(modal)
+                            const modalName = d3.select('#modal')
+                            modalName.select('h2').text(country)
+                            // modalName.style('display', 'block')
                         })
                         .append('title')
                         .text(d => countryName[d.id])
                 });
-        })
+            })
+        // closeModal()
 }

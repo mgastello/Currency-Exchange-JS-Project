@@ -12,7 +12,13 @@
 
 h1 {
     font-size: 52px;
-    display: flex;
-    justify-content: center;
+    display: inline;
+    float: inline-end;
     font-family: 'Copperplate', sans-serif;
 };
+
+h6 {
+    display: inline;
+    // padding: 250px;
+    // padding-top: 100px;
+}

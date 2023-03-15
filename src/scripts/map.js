@@ -33,6 +33,7 @@ export function renderMap() {
                         .on('click', function(d) {
                             const country = d.target.__data__.properties.name
                             openModal(modal)
+                            overlay.classList.add('active')
                             const modalName = d3.select('#modal')
                             modalName.select('h2').text(country)
                             const cCode = data1[country] != undefined ? data1[country] : `No Data`

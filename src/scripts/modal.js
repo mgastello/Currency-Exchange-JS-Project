@@ -1,6 +1,6 @@
 const openModalButtons = document.querySelectorAll('.country')
 const closeModalButtons = document.querySelectorAll('data-close-button')
-const overlay = document.getElementById('overlay')
+// const overlay = document.getElementById('overlay')
 
 openModalButtons.forEach(button => {
     button.addEventListener('click', () => {

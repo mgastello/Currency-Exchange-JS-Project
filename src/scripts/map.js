@@ -21,7 +21,6 @@ export function renderMap() {
             tsvData.forEach(d => {
                 countryName[d.iso_n3] = d.name
             })
-            // d3.json('https://unpkg.com/world-atlas@1.1.4/world/110m.json')
             d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json')
                 .then(data => {
                     const countries = topojson.feature(data, data.objects.countries);
@@ -52,7 +51,6 @@ export function renderMap() {
                         .append('title')
                         .text(d => countryName[d.id])
                 });
-
                 const closeModalButtons = document.querySelectorAll('[data-close-button]')
                     closeModalButtons.forEach(button => {
                         button.addEventListener('click', () => {
@@ -62,3 +60,6 @@ export function renderMap() {
                     })
             })
         }
+        
+
+            

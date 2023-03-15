@@ -24,7 +24,6 @@ closeModalButtons.forEach(button => {
 // })
 
 export function openModal(modal) {
-    // debugger
     modal.classList.add('active')
     // overlay.classList.add('active')
 }

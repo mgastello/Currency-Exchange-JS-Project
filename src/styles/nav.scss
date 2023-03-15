@@ -1,0 +1,29 @@
+nav {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+
+    button {
+        background: none;
+        border: none;
+        font-size: 25px;
+        color: white;
+        font-family: copperplate;
+        margin-top: 10px;
+    }
+    
+    img {
+        width: 45px;
+        background: none;
+        border: none;
+    }
+
+    h1 {
+        font-size: 58px;
+        font-family: copperplate;
+        margin-right: 65px;
+    }
+};
+
+

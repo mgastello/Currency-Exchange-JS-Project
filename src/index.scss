@@ -1,21 +1,12 @@
 @import "./styles/reset.css";
-// @import "./styles/example.scss"; // semi colons are important in scss!!!!!!!
 @import "./styles/map.scss";
 @import "./styles/modal.scss";
 @import "./styles/instructions.scss";
 @import "./styles/nav.scss";
-
-// we now have access to the variable we defined in the example.scss file
-// in this file because we imported the file
-
-// #main {
-//     color: $color;
-// }
 
 h6 {
     display: flex;
     justify-content: center;
     color: white;
     font-family: copperplate;
-    // margin-left: 20px;
 }

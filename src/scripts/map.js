@@ -40,7 +40,6 @@ export function renderMap() {
                             const cName = data3[country] != undefined ? data3[country] : `No Data`
                             data2.then((data) => {
                                 const value = data.results[cCode] != undefined ? data.results[cCode] : `No Data`
-                                console.log(value)
                                 if (value !== `No Data`) {
                                     modalName.select('p3').text(`1 USD equals ${value.toFixed(2)} ${cCode}`)
                                 } else {

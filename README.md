@@ -2,6 +2,8 @@
 
 xChngd is a data visualization of an interactive world map that shows the conversion rate of a selected country's currency back to the US Dollar. Additionally, upon selecting a country from the map, will present information such as the currency code, symbol, and date of introduction. Whether you are traveling away from home, would like to compare the economic health of a country to another country, or are just curious of what your dollar is worth somewhere else; we're here for you!
 
+<img width="1026" alt="Screenshot 2023-03-09 at 2 39 10 PM" src="images/Screenshot 2023-03-16 at 12.01.19 PM.png">
+
 # Functionality and MVPs
 
 In xChngd, users will be able to:
@@ -9,6 +11,8 @@ In xChngd, users will be able to:
 * Select a country from the map.
 * Be able to clearly see the value of a single US Dollar in a selected country.
 * See aditional information on a country's currency in a pop up when selecting a country.
+
+<img width="1026" alt="Screenshot 2023-03-09 at 2 39 10 PM" src="images/Screenshot 2023-03-16 at 12.09.35 PM.png">
 
 # Wireframe
 
@@ -28,12 +32,12 @@ This project will be implemented using the following technologies
 
 # Implementation Timeline
 
-* Friday & Weekend - Research and be comfortable using the D3 library and the API hand in hand. Render and style the map.
-* Monday - Implement the logic to be able to correctly get exchange rates from USD to any other currency. Be able to correctly display any other information needing to be rendered.
-* Tuesday - Focus on rendering pop ups when clicking on a country that displays the information of that selected country.
+* Friday & Weekend - Project setup (make sure that webpack is working properly). Research and be comfortable using the D3 library and the API hand in hand. Render and style the map.
+* Monday - Focus on rendering pop ups when clicking on a country that displays the currency information of that selected country.
+* Tuesday - Implement the logic to be able to correctly get exchange rates from USD to any other currency. Be able to correctly display any other information needing to be rendered.
 * Wednesday - Touch up styling and add my nav links as well as favicon.
 * Thursday - Deploy to GitHub pages.
 
-# Bonus features
+# Future Implementations
 
 * Be able to compare any two currencies together rather than only converting back to USD.

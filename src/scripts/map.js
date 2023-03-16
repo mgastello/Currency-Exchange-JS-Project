@@ -2,6 +2,7 @@ import { openModal, closeModal } from "./modal";
 const data1 = require("./country-currency-codes.json")
 import { data2 } from "./api";
 const data3 = require("./country-currency-names.json")
+const data4 = require("./country-currency-symbols.json")
 
 export function renderMap() {
     const width = 1650;
@@ -38,16 +39,18 @@ export function renderMap() {
                             modalName.select('h2').text(country)
                             const cCode = data1[country] != undefined ? data1[country] : `No Data`
                             const cName = data3[country] != undefined ? data3[country] : `No Data`
+                            const cSymbol = data4[country] != undefined ? data4[country] : `No Data`
                             data2.then((data) => {
                                 const value = data.results[cCode] != undefined ? data.results[cCode] : `No Data`
                                 if (value !== `No Data`) {
-                                    modalName.select('p3').text(`1 USD equals ${value.toFixed(2)} ${cCode}`)
+                                    modalName.select('p4').text(`1 USD equals ${value.toFixed(2)} ${cCode}`)
                                 } else {
-                                    modalName.select('p3').text(`No conversion data to ${cCode}`)
+                                    modalName.select('p4').text(`No conversion data to ${cCode}`)
                                 }
                             })
                             modalName.select('p1').text(`Currency Name: ${cName}`)
-                            modalName.select('p2').text(`Currency Code: ${cCode}`)
+                            modalName.select('p2').text(`Currency Symbol: ${cSymbol}`)
+                            modalName.select('p3').text(`Currency Code: ${cCode}`)
                         })
                         .append('title')
                         .text(d => countryName[d.id])

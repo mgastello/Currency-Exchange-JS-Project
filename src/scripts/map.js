@@ -1,5 +1,6 @@
 import { openModal, closeModal } from "./modal";
 const codes = require("./country-currency-codes.json")
+import { rates } from "./api";
 const names = require("./country-currency-names.json")
 const symbols = require("./country-currency-symbols.json")
 
@@ -39,7 +40,7 @@ export function renderMap() {
                             const cCode = codes[country] != undefined ? codes[country] : `No Data`
                             const cName = names[country] != undefined ? names[country] : `No Data`
                             const cSymbol = symbols[country] != undefined ? symbols[country] : `No Data`
-                            data2.then((data) => {
+                            rates.then((data) => {
                                 const value = data.results[cCode] != undefined ? data.results[cCode] : `No Data`
                                 if (value !== `No Data`) {
                                     modalName.select('p4').text(`1 USD equals ${value.toFixed(2)} ${cCode}`)

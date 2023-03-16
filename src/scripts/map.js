@@ -1,8 +1,7 @@
 import { openModal, closeModal } from "./modal";
-const data1 = require("./country-currency-codes.json")
-import { data2 } from "./api";
-const data3 = require("./country-currency-names.json")
-const data4 = require("./country-currency-symbols.json")
+const codes = require("./country-currency-codes.json")
+const names = require("./country-currency-names.json")
+const symbols = require("./country-currency-symbols.json")
 
 export function renderMap() {
     const width = 1650;
@@ -37,9 +36,9 @@ export function renderMap() {
                             overlay.classList.add('active')
                             const modalName = d3.select('#modal')
                             modalName.select('h2').text(country)
-                            const cCode = data1[country] != undefined ? data1[country] : `No Data`
-                            const cName = data3[country] != undefined ? data3[country] : `No Data`
-                            const cSymbol = data4[country] != undefined ? data4[country] : `No Data`
+                            const cCode = codes[country] != undefined ? codes[country] : `No Data`
+                            const cName = names[country] != undefined ? names[country] : `No Data`
+                            const cSymbol = symbols[country] != undefined ? symbols[country] : `No Data`
                             data2.then((data) => {
                                 const value = data.results[cCode] != undefined ? data.results[cCode] : `No Data`
                                 if (value !== `No Data`) {
@@ -64,6 +63,3 @@ export function renderMap() {
                     })
             })
         }
-        
-
-            

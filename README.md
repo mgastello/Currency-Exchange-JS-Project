@@ -1,6 +1,6 @@
 # xChngd
 
-xChngd is a data visualization of an interactive world map that shows the conversion rate of a selected country's currency back to the US Dollar. Additionally, upon selecting a country from the map, will present information such as the currency code, symbol, and date of introduction. Whether you are traveling away from home, would like to compare the economic health of a country to another country, or are just curious of what your dollar is worth somewhere else; we're here for you!
+[xChngd](http://michaelgastello.com/xChngd/) is a data visualization of an interactive world map that shows the conversion rate of a selected country's currency back to the US Dollar. Additionally, upon selecting a country from the map, will present information such as the currency code, symbol, and date of introduction. Whether you are traveling away from home, would like to compare the economic health of a country to another country, or are just curious of what your dollar is worth somewhere else; we're here for you!
 
 <img width="900" alt="Screenshot 2023-03-09 at 2 39 10 PM" src="images/Screenshot 2023-03-16 at 12.01.19 PM.png">
 

@@ -10,7 +10,7 @@ In xChngd, users will be able to:
 * Interact with a world map.
 * Select a country from the map.
 * Be able to clearly see the value of a single US Dollar in a selected country.
-* See aditional information on a country's currency in a pop up when selecting a country.
+* See additional information on a country's currency in a pop up when selecting a country.
 
 <img width="900" alt="Screenshot 2023-03-09 at 2 39 10 PM" src="images/Screenshot 2023-03-16 at 12.09.35 PM.png">
 
